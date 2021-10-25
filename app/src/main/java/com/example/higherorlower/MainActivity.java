@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         int guessInt = Integer.parseInt(guessedittext.getText().toString());
         if (guessInt > randomnumber) {
             setToast("Lower!");
-        } else if (guessInt > randomnumber) {
+        } else if (guessInt < randomnumber) {
             setToast("Higher!");
         } else {
             setToast("That's right! try again!");
